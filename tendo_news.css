@@ -12,7 +12,7 @@
 body {
 	margin: 0;
 	text-decoration-style: none;
-	background: #dbeff3
+	background: #f7fbfc
 }
 #navbar_buttons {
 	background-color:#4BB4AD;
@@ -23,25 +23,25 @@ body {
 	overflow: hidden;
 	width: 100%;
 }
-a:link {
+#navbar_buttons a:link {
 	text-decoration: none;
 }
-a:visited {
+#navbar_buttons a:visited {
 	text-decoration: none;
 	color: white;
 }
-a:hover {
+#navbar_buttons a:hover {
 	text-decoration: none;
 	color: #9ad3de;
 }
-a:active {
+#navbar_buttons a:active {
 	text-decoration: none;
 }
 .navbar_li_item {
 	display: inline-block;
     color: white;
     text-align: center;
-    padding: 75px 60px 20px 20px;
+    padding: 25px 60px 20px 20px;
     text-decoration: none;
 	float: right;
 	font-size: 8pt;
@@ -54,11 +54,116 @@ a:active {
 	position: fixed;
 }
 #logo_container {
-	height: 150px;
+	height: 100px;
 	width: auto;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	padding-left: 60px
+	padding-left: 60px;
+}
+#screenshot_img {
+	padding-top: 100px;
+	width: 100%;
+	height: 100%;
+}
+div.gallery {
+	padding: 20px 20px 60px 20px;
+	height: 100%;
+	margin: 30px;
+	width: 100%;
+	align-content: center;
 }
 
+div.gallery:hover {
+    style: none;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+	align-content: center;
+	border: solid 34px #9ad3de;
+	border-top: solid 25px #9ad3de;
+	margin-bottom: -10px;
+}
+a {
+	text-decoration: none;
+	color:#000000;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #4bb5ab;
+}
+a:active {
+	text-decoration: none;
+}
+#headline {
+	font-family: lato;
+}
+.desc {
+    padding: 20px;
+	margin: 0px;
+	margin-top: -5%;
+	border-top: 10px;
+	font-family: poppins;
+	background: #9ad3de;
+	font-size: 10pt;
+	text-align: left;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+   	float: left;
+    width: 24.99999%;
+	margin: 60px;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.gallery_box_top {
+	height: 40px;
+	width: auto;
+	background:#4bb5ab;
+	margin: 0;
+	padding: 0;
+	border-top-left-radius: 50%;
+
+}
+div .so_me_buttons {
+	height: 30px !important; 
+	width: 30px !important; 
+	overflow: hidden !important;
+	background:#4bb5ab !important;
+	border: 0px !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	
+}
+div .so_me_logo_container {
+	height: 30px ;
+	width: 30px ;
+	display: flex;
+	float: right;
+	margin: 5px;
+}
