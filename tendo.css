@@ -1,0 +1,190 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("couple.png");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* whats tendo about */
+
+
+
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto
+}
+
+
+.text-center {
+    text-align: center
+}
+
+.round {
+    border-radius: 50%
+}
+
+.unstyled {
+    list-style: none;
+    padding: 0
+}
+
+.unstyled li {
+    margin-left: 0
+}
+
+.text-two-columns {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px
+}
+
+.text-two-columns p:first-of-type {
+    margin-top: 0
+}
+
+
+
+section.no-bottom-padding {
+    padding-bottom: 0
+}
+
+section.no-top-padding {
+    padding-top: 0
+}
+
+.no-top-margin {
+    margin-top: 0
+}
+
+.no-bottom-margin {
+    margin-bottom: 0
+}
+
+.block {
+    display: block
+}
+
+.small {
+    display: none
+}
+
+
+
+img {
+    width: 100%
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 40vw;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 40px
+}
+
+.image.align-bottom {
+    background-position: bottom
+}
+
+
+.container {
+    margin: 40px 0
+}
+
+
+
+.container:first-of-type {
+    margin-top: 0
+}
+
+.container:last-of-type {
+    margin-bottom: 0
+}
+
+.column-container {
+    overflow: hidden
+}
+
+.column-container.c4 .column {
+    width: calc(100% / 4 - (20px * (4 - 1)/ 4))
+}
+
+.column-container.c3 .column {
+    width: calc(100% / 3 - (20px * (3 - 1)/ 3))
+}
+
+.column-container.c2 .column {
+    width: calc(100% / 2 - (20px * (2 - 1)/ 2))
+}
+
+@media (max-width: 600px) {
+    .column-container.c2 .column,.column-container.c3 .column,.column-container.c4 .column {
+        width:100%;
+        margin-bottom: 20px;
+        margin-right: 0
+    }
+
+    .column-container.c2 .column:last-child,.column-container.c3 .column:last-child,.column-container.c4 .column:last-child {
+        margin-bottom: 0
+    }
+}
+
+.column {
+    float: left;
+    margin-right: 20px
+}
+
+.column:last-child {
+    margin-right: 0
+}
+
+.column img.avatar,.column img.icon {
+    max-width: 75%;
+    margin: 25px 0
+}
+
+
+
+/* news */
+
+
+
+
+
+
+    
