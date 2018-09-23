@@ -11,6 +11,8 @@
 }
 body {
 	margin: 0;
+	max-width: 100%;
+	max-height: 100%;
 	text-decoration-style: none;
 	background: #f7fbfc
 }
@@ -20,8 +22,8 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	overflow: hidden;
 	width: 100%;
+	height: 80px;
 }
 #navbar_buttons a:link {
 	text-decoration: none;
@@ -40,51 +42,61 @@ body {
 .navbar_li_item {
 	display: inline-block;
     color: white;
-    text-align: center;
-    padding: 25px 60px 20px 20px;
+    padding: 14px 60px 20px 20px;
     text-decoration: none;
 	float: right;
 	font-size: 8pt;
 	font-family: Lato-Bold;
 }
-#wrapper {
-	width: 800px;
-	overflow: hidden;
-	margin: 0;
-	position: fixed;
+@media only screen and (max-width: 768px) {
+	#navbar_buttons {
+		width: 768px;
+	}
 }
 #logo_container {
-	height: 100px;
-	width: auto;
+	height: 100%;
+	max-height: 80px;
+	width: 250px;	;
+	max-width: 250px;
 	overflow: hidden;
-	margin: 0;
-	padding: 0;
 	padding-left: 60px;
+	position: fixed;
 }
 #screenshot_img {
-	padding-top: 100px;
+	padding-top: 80px;
 	width: 100%;
 	height: 100%;
 }
-div.gallery {
-	padding: 20px 20px 60px 20px;
-	height: 100%;
-	margin: 30px;
+.newsbox_container {
+	padding-left: 50px;
+	margin: 0px;
 	width: 100%;
-	align-content: center;
+}
+.grid_container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+div.gallery {
+	height: 100%;
+	width: 100%;
+	max-width: 400px;
+	margin-top: 10%;
+	margin-bottom: 15%;
 }
 
 div.gallery:hover {
     style: none;
 }
-
 div.gallery img {
     width: 100%;
     height: 100%;
-	align-content: center;
-	border: solid 20px #9ad3de;
+	border: solid 40px #9ad3de;
 	border-top: solid 25px #9ad3de;
 	margin-bottom: -10px;
+	max-height: 300px;
+	max-width: 500px;
 }
 a {
 	text-decoration: none;
@@ -107,55 +119,89 @@ a:active {
 	font-family: lato;
 }
 .desc {
-    padding: 20px;
-	margin-top: 0px;
-	border-top: 0px;
+    padding: 10%;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 	font-family: poppins;
 	background: #9ad3de;
 	font-size: 10pt;
-	text-align: left;
-}
-* {
-    box-sizing: border-box;
+	width: 100%;
 }
 .headline {
-	border: #ebf6f8;
 	background: #ebf6f8;
-	border-style: solid;
 	margin-top: -9%;
 	padding: 15px;
-	display: flex;
+	width: 100%;
+	heigth: 100%;
 }
-.responsive {
-    padding: 0 6px;
-   	float: left;
-    width: 24.99999%;
-	margin: 60px;
+@media only screen and (max-width: 768px) {
+	.newsbox_container {
+		width: 350px;
+		height: 200px;
+		margin-top: 70px;
+		margin-bottom: 270px;
+	}
 }
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+@media only screen and (max-width: 400px) {
+	.newsbox_container {
+		width: 350px;
+		height: 200px;
+		padding-left: 10px;
+	}
+}
+@media only screen and (max-width: 2560px) {
+	.grid_container {
+		grid-template-columns: auto auto auto;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.grid_container {
+		grid-template-columns: auto auto;
+	}
+}
+@media only screen and (max-width: 768px) {
+    .grid_container {
+		grid-template-columns: auto auto;
+		margin: 0px;
     }
 }
 @media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
+    .grid_container {
+		grid-template-columns: auto;
+		margin: 0px;
     }
 }
-.clearfix:after {
+@media only screen and (max-width: 375px) {
+	.grid_container {
+		width: 100%;
+		grid-template-columns: auto;
+	}
+}
+@media only screen and (max-width: 378px) {
+	#screenshot_responsive {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	#screenshot_responsive {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.footer_responsive {
+		width: 400px;
+	}
+}
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 .gallery_box_top {
 	height: 40px;
-	width: auto;
+	width: 100%;
 	background:#4bb5ab;
-	margin: 0;
-	padding: 0;
-	border-top-left-radius: 50%;
-
+	border-top-left-radius: 75%;
 }
 div .so_me_buttons {
 	height: 30px !important; 
@@ -164,8 +210,7 @@ div .so_me_buttons {
 	background:#4bb5ab !important;
 	border: 0px !important;
 	margin: 0px 7px 0px 0px !important;
-	padding: 0px !important;
-	
+	padding: 0px !important;	
 }
 div .so_me_logo_container {
 	height: 30px ;
@@ -173,4 +218,79 @@ div .so_me_logo_container {
 	display: flex;
 	float: right;
 	margin: 5px;
+}
+* {
+    box-sizing: border-box;
+}
+.footer {
+	width: 100%;
+	max-width: 1920px;
+	margin-top: 100px;
+	background-color: #4BB4AD;
+	height: 500px;
+	min-width: 100%;
+}
+.footer_logo img {
+	display: flex;
+	margin-left: 45%;
+	height: 65px;
+	width: 80px;
+	margin-top: -100px;
+}
+.we_are_tendo h3 {
+	margin-left: 65%;
+	display: flex;
+	margin-top: -200px;
+	font-family: poppins;
+}
+.we_are_tendo p {
+	margin-left: 65%;
+	font-family: poppins;
+}
+.footer_so_me {
+	max-width: 100px;
+	max-height: 30px;
+	margin: 75%;
+	display: flex;
+	margin-top: 3%
+}
+.footer_fb_logo {
+	width: 30px;
+	margin-right: 10px;
+}
+.footer_insta_logo {
+	width: 30px;
+	margin-left: 25%;
+}
+.footer_adresse h3 {
+	display: flex;
+	font-family: poppins;
+	margin: 25px 0 0 50px;
+}
+.footer_adresse p {
+	display: flex;
+	font-family: poppins;
+	margin: 0 0 0 50px;
+}
+.footer_contact h3 {
+	display: flex;
+	font-family: poppins;
+	margin-left: 50px;
+	margin-bottom: -20px;
+}
+.footer_contact p {
+	display: flex;
+	font-family: poppins;
+	margin-left: 50px;
+}
+.footer_block {
+	height: 100px;
+	width: 100%;
+	background-color: #4BB4AD;
+	margin-top: 100px;
+}
+.footer_color_block {
+	background-color:#9AD3DE;
+	height: 50px;
+	width: 100%;
 }
