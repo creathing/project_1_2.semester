@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+ <head> 
+  <title>Tendo</title>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+
+
+ </head>
+
+
+<body>
+
+ <!-- Navbar -->
+  <div id="wrapper">
+
+    <!-- Navbar buttons-->
+    <ul id="navbar_buttons">
+
+      <li class="navbar_li_item"><a href=""><h1>Contact</h1></a></li>
+      <li class="navbar_li_item"><a href=""><h1>News</h1></a></li>
+      <li class="navbar_li_item"><a href=""><h1>About</h1></a></li>
+      <li class="navbar_li_item"><a href=""><h1>Home</h1></a></li>
+      
+      <!-- Navbar Logo-->
+      <img id="logo_container" src="11.png" alt="Tendo Logo"/>
+
+     <!-- hamvurgermenu -->
+     <div class="hamburgermenu" onclick="myFunction(this)">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+     </div>
+
+    </ul>
+
+  </div>
+
+ <!-- hamvurgermenu dropdown -->
+ <div class="dropdown">
+ <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#about">News</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+
+<!-- Hero Image -->
+<div class="hero">
+
+  <!-- Hero text -->
+  <div class="centered"><h2>Got a qustion? We’d love to hear from you!</h2> 
+  <h3>Send us a message and we’ll respond as soon as possible</h3></div>
+
+</div>
+
+  
+
+<!--Scroll down button -->
+<button onclick="scrollWin()"
+class="button"><i class="down"></i>
+</button>
+
+
+<!-- contact form-->
+<div class="contact">
+  <form>
+    <input type="text" id="Name" name="Name" placeholder="Your Name">
+
+    <input type="text" id="Email" name="email" placeholder="Your E-mail">
+
+    <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+ </form>
+
+ <input type="send" value="send"> 
+
+</div>
+
+<!--javascript-->
+<script>
+  
+   function myFunction(x) 
+    {
+    
+    /*Hamburger menu animation to x*/
+     x.classList.toggle("change");
+
+     /*Hiding and showing the dropdown menu */
+     document.getElementById("myDropdown").classList.toggle("show");
+   }
+
+
+  function scrollWin() 
+  {
+   /* scrolling down smooth*/
+   window.scrollTo({
+    top: 1000,
+    behavior: "smooth"});
+  }
+
+</script>
+
+
+</body>
+</html>
