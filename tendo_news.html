@@ -7,19 +7,42 @@
 </head>
 
 <body>
+	<div class="wrapper">
 	<ul id="navbar_buttons">
 		<li class="navbar_li_item"><a href=""><h1>Contact</h1></a></li>
 		<li class="navbar_li_item"><a href=""><h1>News</h1></a></li>
 		<li class="navbar_li_item"><a href=""><h1>About</h1></a></li>
 		<li class="navbar_li_item"><a href=""><h1>Home</h1></a></li>
 		<img id="logo_container" src="resurser/tendo_full_logo_white.png" alt="Tendo Logo"/>
+		<div class="hamburgermenu" onclick="myFunction(this)">
+     	<div class="bar1"></div>
+     	<div class="bar2"></div>
+     	<div class="bar3"></div>
+     	</div>
 	</ul>
+	</div>
+	<!-- hamvurgermenu dropdown -->
+ 	<div class="dropdown">
+ 	<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  	<div id="myDropdown" class="dropdown-content">
+    	<a href="#home">Home</a>
+    	<a href="#about">About</a>
+    	<a href="#about">News</a>
+    	<a href="#contact">Contact</a>
+  	</div>
+</div>
 	<div id="screenshot_responsive">
 		<div id="screenshot_container">
 			<img id="screenshot_img" src="resurser/exoskelet_m_maskot_redigeret.jpg" alt="Screenshot">
 	</div>
 	</div>
-<div class="grid_container">
+	
+	<!--Scroll down button -->
+	<button onclick="scrollWin()"
+	class="button"><i class="down"></i>
+	</button>
+	
+	<div class="grid_container">
 	<div class="newsbox_container">
   			<div class="gallery">
 				<div class="gallery_box_top">
@@ -164,26 +187,20 @@
 	<div class="footer_responsive">
 	<div class="footer">
 		<div class="footer_color_block"></div>
-		<div class="footer_block"></div>
-		<div class="footer_logo_container"></div>
-		<div class="footer_logo">
-			<img src="resurser/footer_logo.png" alt="Tendo Logo">
-		</div>
-		<div class="footer_contact">
+			<div class="footer_contact">
 			<h3>Contact Us</h3>
 			<p>info@tendoforpeople.se<br>
 			(+46)073-3310414</p>		
 		</div>
-		<div class="footer_adresse">
-			<h3>Adresse</h3>
-			<p>Forskerparken 10<br>
-			5230 Odense M<br>
-			Denmark</p>
-		</div>
+		<div class="footer_block"></div>
 		<div class="we_are_tendo">
 			<h3>We will give you a hand.</h3>
 			<p>Be you.<br>
 				Grasp life with Tendo.</p>
+		</div>
+		<div class="footer_logo_container"></div>
+		<div class="footer_logo">
+			<img src="resurser/footer_logo.png" alt="Tendo Logo">
 		</div>
 		<div class="footer_so_me">
 			<a href="https://www.facebook.com/tendoforpeople/" target="blank">
@@ -193,7 +210,33 @@
 				<img src="resurser/insta_button_orange.png" alt="Instagram Button" class="footer_insta_logo">
 			</a>
 		</div>
+		<div class="footer_adresse">
+			<h3>Adresse</h3>
+			<p>Forskerparken 10<br>
+			5230 Odense M<br>
+			Denmark</p>
+		</div>
 	</div>
 </div>
+	<!--javascript-->
+<script>
+  
+   function myFunction(x) 
+    {
+    
+    /*Hamburger menu animation to x*/
+     x.classList.toggle("change");
+     /*Hiding and showing the dropdown menu */
+     document.getElementById("myDropdown").classList.toggle("show");
+   }
+  function scrollWin() 
+  {
+   /* scrolling down smooth*/
+   window.scrollTo({
+    top: 550,
+    behavior: "smooth"});
+  }
+</script>
+
 </body>
 </html>
