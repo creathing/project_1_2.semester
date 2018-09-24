@@ -275,65 +275,97 @@ div .so_me_logo_container {
 	background-color: #4BB4AD;
 	height: 400px;
 	min-width: 100%;
+	text-align: center;
+	left: 0;
+	bottom: 0;
 }
 .footer_logo img {
-	display: flex;
-	margin-left: 45%;
+	margin-right: 150px;
+	margin-top: 60px;
 	height: 65px;
 	width: 80px;
-	margin-top: -100px;
+	margin-right: 140px
+	
 }
 .we_are_tendo h3 {
-	margin-left: 65%;
-	display: flex;
-	margin-top: -200px;
 	font-family: poppins;
+	display: inline-block;
+	width: 250px;
+	float: right;
+	color: white;
+	font-size: 13pt;
 }
 .we_are_tendo p {
-	margin-left: 65%;
 	font-family: poppins;
-	display: flex;
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+	margin-top: 0;
+	text-align: left;
+	color: white;
+}
+.follow_us h3 {
+	display:inline-block;
+	margin-top: 15px;
+	margin-right: -300px;
+	text-align: left;
+	width: 150px;
+	font-family: poppins;
+	color: white;
 }
 .footer_so_me {
 	max-width: 100px;
 	max-height: 30px;
-	margin: 65%;
 	display: flex;
-	margin-top: 3%
+	float: left;
+	margin-left: 80px;
+	margin-top: 80px;
 }
 .footer_fb_logo {
 	width: 30px;
 	margin-right: 10px;
 	display: flex;
+	margin-left: -5px
 }
 .footer_insta_logo {
 	width: 30px;
-	margin-left: 25%;
 	display: flex;
+	margin-right: 10px;
 }
-.footer_adresse h3 {
+.footer_youtube_logo {
+	width: 40px;
 	display: flex;
+	height: 40px;
+	margin-top: -5px;
+}
+.footer_adresse {
 	font-family: poppins;
-	margin: 25px 0 0 50px;
-	margin-top: -1050px;
+	margin-left: 10%;
+    height: 200px;
+	text-align: left;
+	color: white;
 }
 .footer_adresse p {
-	display: flex;
-	font-family: poppins;
-	margin: 0 0 0 50px;
-	margin-top: 20px;
+	width: 150px;
+	height: 100px;
+	color: white;
 }
-.footer_contact h3 {
-	display: flex;
+.footer_contact {
 	font-family: poppins;
-	margin-left: 50px;
-	margin-top: 10px;
+	width: 15%;
+    height: 200px;
+    float: left;
+	margin-top: 5px;
+	display: inline-block;
+	margin-left: -50px;
+	text-align: left;
+	color: white;
 }
-.footer_contact p {
-	display: flex;
-	font-family: poppins;
-	margin-left: 50px;
-	margin-top: 0px
+.footer_wrapper {
+	width: 80%;
+    height: 50%;
+    margin-top: 100px;
+	display: inline-flex;
 }
 .footer_block {
 	height: 100px;
