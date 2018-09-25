@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="tendo.css">
+<title>tendo-for-people</title>
+</head>
+<body>
+
+<body>
+  <div class="wrapper">
+  <ul id="navbar_buttons">
+    <li class="navbar_li_item"><a href=""><h1>Contact</h1></a></li>
+    <li class="navbar_li_item"><a href=""><h1>News</h1></a></li>
+    <li class="navbar_li_item"><a href=""><h1>About</h1></a></li>
+    <li class="navbar_li_item"><a href=""><h1>Home</h1></a></li>
+    <img id="logo_container" src="logo.png" alt="Tendo Logo"/>
+    <div class="hamburgermenu" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      </div>
+  </ul>
+  </div>
+  <!-- hamvurgermenu dropdown -->
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#about">News</a>
+      <a href="#contact">Contact</a>
+    </div>
+</div>
+  <div id="screenshot_responsive">
+    <div id="screenshot_container">
+      <img id="screenshot_img" src="maskot.jpg" alt="Screenshot">
+  </div>
+  </div>
+  
+  <!--Scroll down button -->
+  <button onclick="scrollWin()"
+  class="button"><i class="down"></i>
+  </button>
+
+ 
+
+<div class="hero-image">
+  <div class="hero-text">
+   
+  </div>
+</div>
+
+
+<h2>Whats Tendo about</h2>
+
+<div class="newspaper">
+Tendo is a soft robotic exoskeleton, imagine a robotic glove, which strengthens your grip. It covers the thumb, index finger and forearm and it’s equipped with soft artificial tendons and smart sensors detecting when you are about to grasp an object and applies the requested strength to your fingers.
+
+Tendo creates greater independence for people suffering from limitations due to e.g. arthritis, an injury, stroke or age and results in an improved self-image and quality of life as well as a reduced need of assistance from the community and family. Tendo is worn almost like a glove and enables a strong grip in more or less all everyday situations.</div>
+<div class="row">
+  <div class="column" style="background-color:#white;">
+    <img src="robot.png" alt="Girl in a jacket" style="width:100px;height:100px;">
+    <h2>Soft Exoskeleton</h2>
+    <p>Intelligent sensors that detects and enhances your grip.</p>
+  </div>
+  <div class="column" style="background-color:#white;">
+    <img src="finger.png" alt="Girl in a jacket" style="width:100px;height:100px;">
+    <h2>Truly wearable</h2>
+    <p>The pinch grip enables everyday activities and enables a truly wearable and slim design.</p>
+  </div>
+  <div class="column" style="background-color:#white;">
+  <img src="heart.png" alt="Girl in a jacket" style="width:100px;height:100px;">
+    <h2>Made for people</h2>
+    <p>...not their symptoms.</p>
+  </div>
+</div>
+
+
+
+<div class="wrapper">
+  <div class="contents">
+    <div>
+      <p>News</p>
+      <p>
+        <a href="index.html"></a>
+      <p>
+    </div>
+    <div class="content">
+      <div class="image">
+        <img src="writing.png" alt="tendo">
+      </div>
+      <div class="box">
+        <h2>León de Áfric</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, nemo. Consequatur quod rerum reiciendis, laborum, ex, accusamus atque fugiat dicta aperiam commodi adipisci impedit animi. Non impedit, reprehenderit eius dolor.</p>
+        <button onclick="myFunction()" id="myBtn">Read more news</button>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+ <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } 
+</script>
+   
+
+   <div class="wrapper">
+  <div class="contents">
+    <div>
+      <p>News</p>
+      <p>
+        <a href="index.html"></a>
+      <p>
+    </div> 
+    <div class="content">
+      <div class="image">
+        <img src="writing.png" alt="tendo">
+      </div>
+      <div class="box">
+        <h2>León de Áfric</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, nemo. Consequatur quod rerum reiciendis, laborum, ex, accusamus atque fugiat dicta aperiam commodi adipisci impedit animi. Non impedit, reprehenderit eius dolor.</p>
+        <button onclick="myFunction()" id="myBtn">Read more news</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } 
+</script>
+
+<body style="background-image:url('blue.png')">
+
+
+
+
+<div class="footer_responsive">
+  <div class="footer">
+  <div class="footer_color_block"></div>
+    <div class="footer_wrapper">
+      <div class="footer_contact">
+        <h3>Contact Us</h3>
+        <p>info@tendoforpeople.se<br>
+        (+46)073-3310414</p>    
+      </div>
+    <div class="footer_adresse">
+      <h3>Address</h3>
+      <p>Forskerparken 10<br>
+      5230 Odense M<br>
+      Denmark</p>
+    </div>
+    <div class="footer_block"></div>
+    <div class="footer_logo_container"></div>
+      <div class="footer_logo">
+        <img src="resurser/footer_logo.png" alt="Tendo Logo">
+      </div>
+      <div class="we_are_tendo">
+        <h3>We will give you a hand.</h3>
+        <p>Be you.<br>
+        Grasp life with Tendo.</p>
+      </div>
+      <div class="follow_us"><h3>Follow us at</h3></div>
+      <div class="footer_so_me">
+      <a href="https://www.facebook.com/tendoforpeople/" target="blank">
+        <img src="resurser/fb_btn_orange.png" alt="Instagram Button" class="footer_fb_logo">
+      </a>
+      <a href="https://www.instagram.com/tendoforpeople/?hl=da" target="_blank">
+        <img src="resurser/insta_button_orange.png" alt="Instagram Button" class="footer_insta_logo">
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="resurser/youtube_white.png" class="footer_youtube_logo">
+      </a>
+      </div>  
+  </div>
+  </div>
+</div>
+  <!--javascript-->
+<script>
+  
+   function myFunction(x) 
+    {
+    
+    /*Hamburger menu animation to x*/
+     x.classList.toggle("change");
+     /*Hiding and showing the dropdown menu */
+     document.getElementById("myDropdown").classList.toggle("show");
+   }
+  function scrollWin() 
+  {
+   /* scrolling down smooth*/
+   window.scrollTo({
+    top: 550,
+    behavior: "smooth"});
+  }
+</script>
+
+<body style="background-image:url('blue.png')">
+
+
+
+</body>
+</html>
+
+
