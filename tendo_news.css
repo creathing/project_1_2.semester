@@ -280,36 +280,36 @@ div .so_me_logo_container {
 	bottom: 0;
 }
 .footer_logo img {
-	margin-right: 150px;
 	margin-top: 60px;
 	height: 65px;
 	width: 80px;
-	margin-right: 140px
+	margin-left: 150%;
 	
 }
 .we_are_tendo h3 {
 	font-family: poppins;
-	display: inline-block;
+	display: flex;
 	width: 250px;
 	float: right;
 	color: white;
 	font-size: 13pt;
+	margin-right: -23%;
 }
 .we_are_tendo p {
 	font-family: poppins;
-	display: inline-block;
 	float: left;
-	margin-left: 20px;
+	margin-left: 65%;
 	margin-top: 0;
 	text-align: left;
 	color: white;
+	display: flex;
 }
 .follow_us h3 {
-	display:inline-block;
+	display: flex;
 	margin-top: 15px;
-	margin-right: -300px;
-	text-align: left;
-	width: 150px;
+	margin-left: 75%;
+	text-align: center;
+	width: 200px;
 	font-family: poppins;
 	color: white;
 }
@@ -318,8 +318,8 @@ div .so_me_logo_container {
 	max-height: 30px;
 	display: flex;
 	float: left;
-	margin-left: 80px;
-	margin-top: 80px;
+	margin-left: -3%;
+	margin-top: 6%;
 }
 .footer_fb_logo {
 	width: 30px;
@@ -355,24 +355,19 @@ div .so_me_logo_container {
 	width: 15%;
     height: 200px;
     float: left;
+	display: inline;
+	margin-left: 5%;
 	margin-top: 5px;
-	display: inline-block;
-	margin-left: -50px;
 	text-align: left;
 	color: white;
 }
 .footer_wrapper {
-	width: 80%;
-    height: 50%;
-    margin-top: 100px;
-	display: inline-flex;
-}
-.footer_block {
-	height: 100px;
 	width: 100%;
-	background-color: #4BB4AD;
-	margin-top: 100px;
+    height: 50%;
+    margin-top: 5%;
+	display: flex;
 }
+
 .footer_color_block {
 	background-color:#9AD3DE;
 	height: 50px;
@@ -450,7 +445,6 @@ div .so_me_logo_container {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
