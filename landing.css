@@ -1,0 +1,417 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("couple.png");
+
+
+    /* Set a specific height */
+    width: 117%;
+    height: 600px;
+    padding-top: 80px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+
+/* navbar */
+
+
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('Lato-Bold.eot'); /* IE9 Compat Modes */
+  src: url('Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Lato-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Lato-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('resurser/lato_font/lato-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Lato-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    text-decoration-style: none;
+    background: #f7fbfc
+}
+.wrapper {
+
+    z-index: 1;
+}
+#navbar_buttons {
+    background-color:#4BB4AD;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+#navbar_buttons a:link {
+    text-decoration: none;
+}
+#navbar_buttons a:visited {
+    text-decoration: none;
+    color: white;
+}
+#navbar_buttons a:hover {
+    text-decoration: none;
+    color: #9ad3de;
+}
+#navbar_buttons a:active {
+    text-decoration: none;
+}
+.navbar_li_item {
+    display: inline-block;
+    color: white;
+    padding: 14px 60px 20px 20px;
+    text-decoration: none;
+    float: right;
+    font-size: 8pt;
+    font-family: Lato-Bold;
+}
+/*Scroll down button*/
+.button {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    padding:15px;
+    margin: 15px;
+    cursor: pointer;
+    top: 79%;
+    left: 50%;
+    transform: translate(-80%, -80%);
+    position: relative;
+    
+}
+
+i {
+  border: solid #4BB4AD;
+  border-width: 0 6px 6px 0;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+@media only screen and (max-width: 768px) {
+    #navbar_buttons {
+        width: 768px;
+    }
+}
+#logo_container {
+    height: 100%;
+    max-height: 80px;
+    width: 250px;   ;
+    max-width: 250px;
+    overflow: hidden;
+    padding-left: 60px;
+    position: fixed;
+}
+
+}
+#screenshot_img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* whats tendo about */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+  ´´´´´´´
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+/* background-image */
+
+body {
+    background: no-repeat bottom;
+    margin-right: 200px;
+}
+
+/* textbox */
+
+ 
+
+.wrapper {
+  width: 500px;
+  margin: 0;
+  line-height: 10px;
+
+}
+
+.content {
+  display: flex;
+  justify-content:flex-start;
+
+}
+
+.image {
+  flex: 800;
+}
+
+.box {
+  flex: 200 ;
+  background: orange;
+  padding:0px;
+  width: 100px;
+}
+
+
+
+
+/* footer*/
+
+
+.footer {
+    width: 117%;
+    max-width: 1920px;
+    margin-top: 100px;
+    background-color: #4BB4AD;
+    height: 400px;
+    min-width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+.footer_logo img {
+    margin-right: 150px;
+    margin-top: 60px;
+    height: 65px;
+    width: 80px;
+    margin-right: 140px
+    
+}
+.we_are_tendo h3 {
+    font-family: poppins;
+    display: inline-block;
+    width: 250px;
+    float: right;
+    color: white;
+    font-size: 13pt;
+}
+.we_are_tendo p {
+    font-family: poppins;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 0;
+    text-align: left;
+    color: white;
+}
+.follow_us h3 {
+    display:inline-block;
+    margin-top: 15px;
+    margin-right: -300px;
+    text-align: left;
+    width: 150px;
+    font-family: poppins;
+    color: white;
+}
+.footer_so_me {
+    max-width: 100px;
+    max-height: 30px;
+    display: flex;
+    float: left;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.footer_fb_logo {
+    width: 30px;
+    margin-right: 10px;
+    display: flex;
+    margin-left: -5px
+}
+.footer_insta_logo {
+    width: 30px;
+    display: flex;
+    margin-right: 10px;
+}
+.footer_youtube_logo {
+    width: 40px;
+    display: flex;
+    height: 40px;
+    margin-top: -5px;
+}
+.footer_adresse {
+    font-family: poppins;
+    margin-left: 10%;
+    height: 200px;
+    text-align: left;
+    color: white;
+}
+.footer_adresse p {
+    width: 150px;
+    height: 100px;
+    color: white;
+}
+.footer_contact {
+    font-family: poppins;
+    width: 15%;
+    height: 200px;
+    float: left;
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: -50px;
+    text-align: left;
+    color: white;
+}
+.footer_wrapper {
+    width: 80%;
+    height: 50%;
+    margin-top: 100px;
+    display: inline-flex;
+}
+.footer_block {
+    height: 100px;
+    width: 100%;
+    background-color: #4BB4AD;
+    margin-top: 100px;
+}
+.footer_color_block {
+    background-color:#9AD3DE;
+    height: 50px;
+    width: 100%;
+}
+/* On small screens, hide navbar */
+@media only screen and (max-width: 740px) {
+  .navbar_li_item {
+    visibility: hidden;
+  }
+}
+
+.hamburgermenu {
+    display:none;
+}
+
+@media only screen and (max-width: 740px) {
+.hamburgermenu {
+
+    display: inline-block;
+    cursor: pointer;
+    top:0;
+    right: 0;
+    position: fixed;
+    padding-top: 20px;
+    padding-right: 30px;  }
+
+    /*hamburger menu lines*/
+.bar1, .bar2, .bar3 {
+
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: rotate(-45deg)translate(-8px, 7px) ;;
+    
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px) ;
+   
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 70px;
+    margin-top: 20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1 ;
+    font-family: lato;
+    position: fixed;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu when the user clicks on the dropdown button */
+.show {display:block;}
+}
+
+
